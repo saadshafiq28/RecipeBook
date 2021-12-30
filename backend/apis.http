@@ -1,0 +1,39 @@
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "rizimore@gmail.com",
+  "password": "rizimore,,,"
+}
+
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Rizi More",
+    "username": "rizimore",
+    "email": "rizimore@gmail.com",
+    "password": "rizimore,,,"
+}
+
+###
+GET http://localhost:5000/api/auth/profile
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxYzk0MjBjYzhmZjllYmZlNzM2MjliOCIsIm5hbWUiOiJSaXppIE1vcmUiLCJ1c2VybmFtZSI6InJpemltb3JlIiwiZW1haWwiOiJyaXppbW9yZUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRNalZQNDVCNjU5SW9qdzBVL0NoSHNlQ2pGNU9DcFJWeWFmV2lqUFZGd25pQkFJbmdjQUlOUyIsInJvbGUiOiJ1c2VyIiwiZGVsZXRlZEF0IjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTEyLTI3VDA0OjMzOjE2LjY3MFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTEyLTI3VDA0OjMzOjE2LjY3MVoiLCJfX3YiOjB9LCJpYXQiOjE2NDA1Nzk2ODksImV4cCI6MTY0MDU4MzI4OX0.NpuKzo6RMmv8YVRDChwUQSRGzUGOsLyPy9vlMzohdA4
+
+###
+GET http://localhost:5000/api/tasks/61c9430a017d36169f95fe29
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxYzk0MjBjYzhmZjllYmZlNzM2MjliOCIsIm5hbWUiOiJSaXppIE1vcmUiLCJ1c2VybmFtZSI6InJpemltb3JlIiwiZW1haWwiOiJyaXppbW9yZUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRNalZQNDVCNjU5SW9qdzBVL0NoSHNlQ2pGNU9DcFJWeWFmV2lqUFZGd25pQkFJbmdjQUlOUyIsInJvbGUiOiJ1c2VyIiwiZGVsZXRlZEF0IjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTEyLTI3VDA0OjMzOjE2LjY3MFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTEyLTI3VDA0OjMzOjE2LjY3MVoiLCJfX3YiOjB9LCJpYXQiOjE2NDA1Nzk2ODksImV4cCI6MTY0MDU4MzI4OX0.NpuKzo6RMmv8YVRDChwUQSRGzUGOsLyPy9vlMzohdA4
+
+###
+POST http://localhost:5000/api/tasks
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxYzk0MjBjYzhmZjllYmZlNzM2MjliOCIsIm5hbWUiOiJSaXppIE1vcmUiLCJ1c2VybmFtZSI6InJpemltb3JlIiwiZW1haWwiOiJyaXppbW9yZUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRNalZQNDVCNjU5SW9qdzBVL0NoSHNlQ2pGNU9DcFJWeWFmV2lqUFZGd25pQkFJbmdjQUlOUyIsInJvbGUiOiJ1c2VyIiwiZGVsZXRlZEF0IjpudWxsLCJjcmVhdGVkQXQiOiIyMDIxLTEyLTI3VDA0OjMzOjE2LjY3MFoiLCJ1cGRhdGVkQXQiOiIyMDIxLTEyLTI3VDA0OjMzOjE2LjY3MVoiLCJfX3YiOjB9LCJpYXQiOjE2NDA1Nzk2ODksImV4cCI6MTY0MDU4MzI4OX0.NpuKzo6RMmv8YVRDChwUQSRGzUGOsLyPy9vlMzohdA4
+Content-Type: application/json
+
+{
+  "user": "61c9420cc8ff9ebfe73629b8",
+  "title": "Task 1",
+  "description": "Task 1 description",
+  "status": "pending",
+  "dueDate": "2020-01-01T00:00:00.000Z"
+}
